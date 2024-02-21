@@ -1,3 +1,4 @@
+
 *.py[co]
 *.sw[nop]
 *~
@@ -13,3 +14,10 @@ coverage
 dist
 node_modules
 npm-debug.log
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*

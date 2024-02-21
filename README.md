@@ -14,6 +14,13 @@ The Forge software is a fully native implementation of the [TLS][] protocol
 in JavaScript, a set of cryptography utilities, and a set of tools for
 developing Web Apps that utilize many network resources.
 
+korea-forge
+------------
+
+forge.pki.decryptPrivateKeyInfo
+- `ou=RA센터,ou=우리은행,ou=등록기관,ou=licensedCA,o=KICA,c=KR` OID=1.2.410.200004.1.15 : TESTED
+- `ou=ITNade RA,o=SignKorea,c=KR` OID=1.2.840.113549.1.5.13 & seedCBC : TESTED
+
 Performance
 ------------
 
