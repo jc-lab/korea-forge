@@ -1,5 +1,7 @@
 /// <reference types="node" />
 
+import {Attributes} from "korea-forge";
+
 declare module "korea-forge" {
     type Byte = number;
     type Bytes = string;
@@ -239,6 +241,8 @@ declare module "korea-forge" {
             legacy?: boolean | undefined;
         };
 
+        type Attributes = Record<OID, Bytes[]>;
+
         interface ByteBufferFingerprintOptions {
             /**
              * @description The type of fingerprint. If not specified, defaults to 'RSAPublicKey'
@@ -298,6 +302,7 @@ declare module "korea-forge" {
                 dP: jsbn.BigInteger;
                 dQ: jsbn.BigInteger;
                 qInv: jsbn.BigInteger;
+                attributes: Attributes;
                 decrypt(data: Bytes, scheme?: EncryptionScheme, schemeOptions?: any): Bytes;
                 sign(md: md.MessageDigest | Bytes, scheme?: SignatureScheme): Bytes;
             }

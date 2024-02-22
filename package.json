@@ -1,6 +1,6 @@
 {
   "name": "korea-forge",
-  "version": "1.3.2-jclab02",
+  "version": "1.3.2-jclab03",
   "description": "JavaScript implementations of network transports, cryptography, ciphers, PKI, message digests, and various utilities.",
   "homepage": "https://github.com/digitalbazaar/forge",
   "author": {
